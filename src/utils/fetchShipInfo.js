@@ -26,7 +26,7 @@ const fetchShipInfo = async () => {
                 })
                 ID_CONTAINER.forEach((CATEGORY_ID) => {
                     let LIST_ID = []
-                    $(`${CATEGORY_ID} div[title='Level 120'] tbody tr`).each((i, elem) => {
+                    $(`#${CATEGORY_ID} div[title='Level 120'] tbody tr`).each((i, elem) => {
                         let propIndex = 0
                         let setProp = { ...initialValue }
                         $(elem).children("td").each((i, elemchild) => {
